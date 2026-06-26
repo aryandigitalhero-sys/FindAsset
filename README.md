@@ -2,7 +2,7 @@
 
 An intelligent creative assistant designed for video editors and content creators. It automates the tedious process of finding visual assets for short-form videos like Reels and YouTube Shorts by analyzing your script, breaking it down into scenes, and fetching the perfect b-roll, images, and GIFs.
 
-![App Preview](frontend/public/Gemini_Generated_Image_qgux2uqgux2uqgux.png)
+
 
 ## 🚀 Functionality
 
