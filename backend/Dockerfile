@@ -9,5 +9,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the backend code
 COPY . .
 
-# Start the FastAPI server
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "10000"]
+# Start the FastAPI server using the PORT environment variable provided by Render
+CMD uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-10000}
