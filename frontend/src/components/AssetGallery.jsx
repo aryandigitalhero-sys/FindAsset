@@ -101,7 +101,10 @@ export default function AssetGallery({ assets, type }) {
     e.preventDefault();
     setBgRemovingIds(prev => new Set(prev).add(id));
     try {
-      const response = await fetch('http://localhost:8001/api/remove-bg', {
+      const endpoint = import.meta.env.PROD 
+        ? 'https://findasset.onrender.com/api/remove-bg' 
+        : 'http://localhost:8001/api/remove-bg';
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url })
