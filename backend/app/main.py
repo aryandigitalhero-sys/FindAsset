@@ -32,6 +32,7 @@ app.include_router(asset_search.router, prefix="/api")
 app.include_router(remove_bg.router, prefix="/api")
 
 @app.get("/")
+@app.head("/")
 def read_root():
     logger.info("Root endpoint accessed")
     return {"message": "Welcome to AI Asset Finder API"}
