@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8001/api';
+const API_URL = import.meta.env.PROD 
+  ? 'https://findasset.onrender.com/api' 
+  : 'http://localhost:8001/api';
 
 export const apiClient = axios.create({
   baseURL: API_URL,
