@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+@theme {
+  --color-dark: #000000;
+  --color-primary: #ffffff; 
+  --color-secondary: #a1a1aa; /* zinc-400 */
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-italian: 'Bodoni Moda', serif;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: white;
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--color-secondary), var(--color-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+groq
+python-dotenv
+httpx
+aiolimiter
+tenacity
+rembg[cpu]
+pillow

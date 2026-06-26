@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ai-asset-finder-backend
+    env: docker
+    region: ohio
+    plan: starter
+    healthCheckPath: /
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
